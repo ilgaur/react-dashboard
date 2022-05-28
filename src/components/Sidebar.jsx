@@ -4,12 +4,12 @@ import { SiShopware } from 'react-icons/si'
 import { MdOutlineCancel } from 'react-icons/md'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 import { links } from '../data/dummy';
-import { useStateContext } from '../contexts/ContextProvider';
+import { useStateContext } from '../contexts/ContextProvider'; 
 const Sidebar = () => {
   const { activeMenu, setActiveMenu } = useStateContext();
   const activeLink = 'flex items-center w-40 gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-white text-md m-2';
   const normalLink = 'flex items-center w-40 gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-lg hover:bg-gray-200 text-gray-700 dark:text-gray-200 dark:hover:text-black m-2';
-  return (
+  return ( 
     <div className="ml-3 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10">
       {activeMenu && (<>
         <div className="overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
