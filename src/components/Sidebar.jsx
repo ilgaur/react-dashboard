@@ -19,6 +19,7 @@ const Sidebar = () => {
             <SiShopware /> <span>Shoppy</span>
           </Link>
           <div className="pl-5 p-5 mt-6 ml-14">
+          
           <TooltipComponent content="Menu" position="BottomCenter">
             <button type="button"
             onClick={() => setActiveMenu(prevActiveMenu => !prevActiveMenu)}
