@@ -11,6 +11,16 @@ const initialState = {
 
 export const ContextProvider = ({ children }) => { 
     const [activeMenu, setActiveMenu] = useState(true);
+
+    //For navbar stuff
+    const [isClicked, setIsClicked] = useState(initialState);
+    // logic to turn on navbar elements using handleClick
+    const handleClick = (clicked) => {
+        setIsClicked({
+            ...initialState, [clicked]:
+            true
+        });
+    }
     return (
         <StateContext.Provider 
         value={{ activeMenu, setActiveMenu }}>
